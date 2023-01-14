@@ -1,0 +1,28 @@
+<nav id="my-first">
+  <ul>
+    <li class="logotype">
+      <img
+        src="../../../assets/kisspng-logo-c-letter-letter-c-5ac700f5a7ff30.0580812215229913496881-removebg-preview.png"
+        alt="imagem" />
+    </li>
+    <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+
+      <div class="busca">
+        <input type="text" placeholder="Buscar" class="inputbusca">
+      </div>
+      <div class="botoes">
+        <a routerLink="" class="homecss">Home</a>
+
+        <a routerLink="" class="stakscss">Stacks</a>
+
+        <a routerLink="" class="logout">Logout</a>
+
+
+      </div>
+
+    </li>
+  </ul>
+</nav>

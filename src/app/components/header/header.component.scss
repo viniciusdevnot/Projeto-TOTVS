@@ -1,0 +1,174 @@
+$menuHeight: 60px;
+$menuBreakpoint: 768px;
+
+#my-first {
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #47409b;
+        border-bottom: 2px solid white;
+        width: 100%;
+
+    }
+
+    .logotype {
+        img {
+            width: 90px;
+            height: 70px;
+            margin: 10px;
+        }
+    }
+
+    .burger {
+        padding: 0 10px;
+        border-left: 1px solid rgb(152, 24, 24);
+        display: none;
+        cursor: pointer;
+
+        i {
+            color: rgb(248, 248, 248);
+            line-height: $menuHeight;
+        }
+
+        @media (max-width: $menuBreakpoint) {
+            display: block;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        @media (max-width: $menuBreakpoint) {
+            display: none;
+
+            &.is-open {
+
+                display: block;
+                position: absolute;
+                top: #{$menuHeight + 2};
+                background: #47409B;
+                width: 100%;
+                margin-top: 20px;
+
+                .menu-item {
+                    border-bottom: 1px solid #1a0f0f;
+                }
+            }
+        }
+
+    }
+}
+
+.homecss {
+    margin-right: 20px;
+    margin-top: -15px;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #8b80f9;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-family: Verdana;
+    letter-spacing: -1px;
+    user-select: none;
+    color: #8b80f9;
+    transition: all .195s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.homecss:hover {
+    border: 2px solid #8b80f9;
+    box-shadow: #8b80f9 0px 0px 12px 1px inset,
+        #8b80f9 0px 0px 12px 1px;
+    border-radius: 5px;
+}
+
+
+.stakscss {
+
+    margin-top: -15px;
+    width: 160px;
+    height: 50px;
+    text-decoration: none;
+    border: 1px solid #8b80f9;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-family: Verdana;
+    letter-spacing: -1px;
+    user-select: none;
+    color: #8b80f9;
+    transition: all .195s ease-in-out;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+
+.logout{
+    margin-top: -15px;
+    width: 160px;
+    height: 50px;
+    text-decoration: none;
+    border: 1px solid #8b80f9;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-family: Verdana;
+    letter-spacing: -1px;
+    user-select: none;
+    color: #8b80f9;
+    transition: all .195s ease-in-out;
+    cursor: pointer;
+    margin-right: 30px;
+
+}
+
+.logout:hover {
+    border: 2px solid #8b80f9;
+    box-shadow: #8b80f9 0px 0px 12px 1px inset,
+        #8b80f9 0px 0px 12px 1px;
+    border-radius: 5px;
+}
+
+
+.stakscss:hover {
+    border: 2px solid #8b80f9;
+    box-shadow: #8b80f9 0px 0px 12px 1px inset,
+        #8b80f9 0px 0px 12px 1px;
+    border-radius: 5px;
+}
+
+.botoes {
+    width: 40%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.busca {
+    width: 70%;
+    border: 1px solid white;
+    height: 50px;
+    margin-bottom: 14px;
+    margin-right: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.inputbusca {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

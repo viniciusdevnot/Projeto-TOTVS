@@ -1,0 +1,148 @@
+<div class="container">
+    <app-header></app-header>
+    <div class="track track-1">
+        <div class="track-inner">
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <div class="plane-tail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="track track-2">
+        <div class="track-inner">
+            <div class="plane-wrapper">
+                <div class="plane">
+                    <div class="plane-tail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteudoGeral">
+
+        <div class="Conteudo">
+            <div class="bloco1">
+                <div class="imgAngular">
+                    <img src="../../../assets/angular.png" alt="imagem" />
+                </div>
+            </div>
+            <div class="bloco2">
+                <div class="imgJs">
+                    <img src="../../../assets/js.png" alt="imagem" />
+                </div>
+            </div>
+            <div class="bloco3">
+                <div class="imgSass">
+                    <img src="../../../assets/sass.png" alt="imagem" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+   <div class="requests">
+    <mat-accordion class="matAcordion">
+        <mat-expansion-panel hideToggle style="width: 100%;">
+            <mat-expansion-panel-header class="PainelTitulo">
+                <mat-panel-title class="tituloCard">
+                    <h1>Requests em Angular</h1>
+                    <mat-icon class="icon">expand_more</mat-icon>
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+        
+          <div class="containerTchu">
+            <div class="imagemMaterial">
+                <div class="containerTotal">
+                <div class="titulosRequest">
+                    <img src="../../../assets/maxresdefault.jpg" alt="imagem" />
+                    <h1>Conhecendo a API RESTful via Console.log <br><span style="color: rgb(152, 152, 235); font-size: 35px;">Veja o conteudo ao lado</span></h1>
+                
+                </div>
+                <div class="textosImg">
+                    <h1>Realizar requisições HTTP é uma das tarefas mais comuns em SPAs atualmente. É por meio delas que a aplicação se comunica com APIs RESTful que lhes provêem dados e funcionalidades. Portanto, saber realizar esse tipo de ação no Angular é fundamental para todo desenvolvedor que utiliza esse framework.</h1>
+                    
+                </div>
+            </div>
+            <div class="iconeRequest">
+                <mat-icon>arrow_forward_ios</mat-icon>
+            </div>
+            </div>
+            <div class="conteudoRequest">
+
+             <div class="requestsApi">
+                <h3 style="font-size: 30px; color: rgb(152, 152, 235);">Exemplos API carros 🚗🚗</h3>
+                <h2>Para saber o resultado de cada click, aperte f12 e clique em console.</h2>
+                
+                <button (click)="obterTodosCarros()" class="buttonRequest">Obter Todos <button class="botaoInterior">TIPO: GET</button></button>
+                <button (click)="obterSomenteUm()" class="buttonRequest">Obter Somente 1 <button class="botaoInterior">TIPO: GET POR ID</button></button>
+                <button (click)="adicionarCarro()" class="buttonRequest">Adicionar <button class="botaoInterior">TIPO: POST</button></button>
+                <button (click)="atualizar()" class="buttonRequest">Atualizar <button class="botaoInterior">TIPO: PUT</button></button>
+                <button (click)="remover()" class="buttonRequest">Remover <button class="botaoInterior">TIPO: DELETE</button></button>
+             </div>
+                
+            </div>
+          </div>
+          
+        
+             
+           
+        </mat-expansion-panel>
+
+    </mat-accordion>
+   </div>
+
+    <div class="home-content1">
+        <app-mat-espancion></app-mat-espancion>
+    </div>
+
+
+
+
+
+    
+
+    <div class="home-content2">
+
+        
+        <div class="video">
+            <div class="textoVideo">
+                <h1>Conteúdo para as pessoas que estão inciando no ramo de desenvolvimente de sistemas. </h1>
+            </div>
+            <div class="containerVideos">
+            
+            <div class="card1">
+                <h1>Introdução ao Angular</h1>
+                <iframe style="width: 100%; height: 250px;" width="420" height="315"
+                    src="https://www.youtube.com/embed/ZSJBCtMMMrs">
+                </iframe>
+            </div>
+            <div class="card2">
+                <h1>Introdução ao JS</h1>
+                <iframe style="width: 100%; height: 250px;" width="420" height="315"
+                    src=" https://www.youtube.com/embed/Ptbk2af68e8"> </iframe>
+            </div>
+
+            <div class="card3">
+                <h1>Introdução ao SASS</h1>
+                <iframe style="width: 100%; height: 250px;" width="420" height="315"
+                src="https://www.youtube.com/embed/WJSJCduJCQM"> </iframe>
+            </div>
+            <div class="card4">
+                <h1>Introdução a Devops</h1>
+                <iframe style="width: 100%; height: 250px;" width="420" height="315"
+                src="https://www.youtube.com/embed/j6yImUbs4OA"> </iframe>
+            </div>
+        
+        </div>
+
+        </div>
+
+    </div>
+    <app-footer></app-footer>
+
+</div>
