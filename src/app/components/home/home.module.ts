@@ -10,13 +10,14 @@ import { HomeComponent } from './home.component';
 import { FooterComponent } from '../footer/footer.component';
 import { MatEspancionComponent } from '../mat-espancion/mat-espancion.component';
 
+
 @NgModule({
     declarations: [
     HomeComponent,
     HeaderComponent,
     FooterComponent,
     MatEspancionComponent,
-
+  
     
   ],
 
