@@ -3,14 +3,14 @@
         <h2>code review</h2>
         <form>
             <div class="caixa__login-input">
-                <input type="text" required />
-                <label>Email</label>
+                <input [(ngModel)]="requestLogin.login" type="text" name="login" required />
+                <label>Usuario</label>
             </div>
             <div class="caixa__login-input">
-                <input type="password" required />
+                <input [(ngModel)]="requestLogin.password" type="password" name="password" required />
                 <label>Senha</label>
             </div>
-            <a (click)="rotaHome()">
+            <a (click)="doLogin()">
                 <span></span>
                 <span></span>
                 <span></span>

@@ -1,25 +1,26 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { CarroService } from './carro.service';
 import { ICarro } from './ICarros';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
 
 
-  constructor(private carroService: CarroService){
-
+  constructor(private carroService: CarroService) {
   }
   ngOnInit(): void {
-    
   }
 
 
-  
-  obterTodosCarros(){
+
+  obterTodosCarros() {
     this.carroService.obterTodos()
       .then(carros => console.log(carros))
       .catch(error => console.error(error));
@@ -27,13 +28,13 @@ export class HomeComponent implements OnInit{
 
 
 
-  obterSomenteUm(){
+  obterSomenteUm() {
     this.carroService.obterPorId(8)
       .then(carro => console.log(carro))
       .catch(error => console.error(error));
   }
 
-  adicionarCarro(){
+  adicionarCarro() {
     const carro: ICarro = {
       nome: "i40",
       marca: "hyundai"
@@ -44,7 +45,7 @@ export class HomeComponent implements OnInit{
       .catch(error => console.error(error));
   }
 
-  atualizar(){
+  atualizar() {
     const carro: ICarro = {
       id: 8,
       nome: "golzin",
@@ -56,7 +57,7 @@ export class HomeComponent implements OnInit{
       .catch(error => console.error(error));
   }
 
-  remover(){
+  remover() {
     this.carroService.delete(9)
       .then(res => console.log('🔴 Removido', res))
       .catch(error => console.error(error));
