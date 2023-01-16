@@ -12,29 +12,29 @@ import { MatEspancionComponent } from '../mat-espancion/mat-espancion.component'
 
 
 @NgModule({
-    declarations: [
+  declarations: [
     HomeComponent,
     HeaderComponent,
     FooterComponent,
     MatEspancionComponent,
-  
-    
+
+
   ],
 
-    providers: [],
-    bootstrap: [HomeComponent],
-    imports: [
-       
-        PoModule,
-        HttpClientModule,
-        PoButtonModule,
+  providers: [],
+  bootstrap: [HomeComponent],
+  imports: [
 
-        MatExpansionModule,
-        MatIconModule,
-        FormsModule,
-        HttpClientModule,
-        HomeRoutingModule,
-     
-    ]
+    PoModule,
+    HttpClientModule,
+    PoButtonModule,
+
+    MatExpansionModule,
+    MatIconModule,
+    FormsModule,
+    HttpClientModule,
+    HomeRoutingModule,
+
+  ]
 })
 export class HomeModule { }

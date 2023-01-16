@@ -21,7 +21,7 @@ const routes: Routes = [
     //deixar o carregamento de componentes mais leve, carregando esse componente somente após o .then do login na request
 
   },
- 
+
 
 
   //se tentar procurar uma rota diferente das rotas declaradas anteriormente, será redirecionado para a tela de login
@@ -30,7 +30,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
