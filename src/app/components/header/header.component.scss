@@ -81,6 +81,8 @@ $menuBreakpoint: 768px;
     cursor: pointer;
     text-decoration: none;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
@@ -94,13 +96,13 @@ $menuBreakpoint: 768px;
 
 .stakscss {
 
+    margin-right: 20px;
     margin-top: -15px;
     width: 160px;
     height: 50px;
-    text-decoration: none;
     border: 1px solid #8b80f9;
     border-radius: 3px;
-    padding: 1rem 2rem;
+    padding-left: 50px;
     display: inline-block;
     font-family: Verdana;
     letter-spacing: -1px;
@@ -108,7 +110,10 @@ $menuBreakpoint: 768px;
     color: #8b80f9;
     transition: all .195s ease-in-out;
     cursor: pointer;
-    margin-right: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 }
 
@@ -169,7 +174,7 @@ $menuBreakpoint: 768px;
     height: 100%;
     border-radius: 10px;
     border: none;
-
+    padding-left: 30px;
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
