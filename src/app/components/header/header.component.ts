@@ -8,20 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit{
 
+  constructor(private router: Router){}
 
-  constructor(private router: Router){
-
-  }
-
-  ngOnInit(): void {
-
-  }
-
-
-
+  ngOnInit(): void {}
 
   isMenuOpen = false;
-
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
@@ -33,6 +24,4 @@ export class HeaderComponent implements OnInit{
   home(){
     this.router.navigate(['home']);
   }
-
-
 }

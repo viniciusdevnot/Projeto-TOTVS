@@ -9,18 +9,13 @@
       <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
     </li>
     <li class="menu" [class.is-open]="isMenuOpen">
-
       <div class="busca">
         <input type="text" placeholder="Buscar" class="inputbusca">
       </div>
       <div class="botoes">
         <a (click)="home()" class="homecss">Home</a>
-
         <a (click)="sair()" class="logout">Sair</a>
-
-
       </div>
-
     </li>
   </ul>
 </nav>
